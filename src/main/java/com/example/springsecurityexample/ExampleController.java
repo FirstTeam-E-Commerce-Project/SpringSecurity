@@ -46,7 +46,7 @@ public class ExampleController {
     @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/admin")
     public String adminEndpoint(){
-        return "Hello, Admin!";
+        return "Hello, Admin!......";
     }
 
 
@@ -74,7 +74,7 @@ public class ExampleController {
                 .collect(Collectors.toList());
 
         LoginResponse response = new LoginResponse(userDetails.getUsername(), roles, jwtToken);
-
+        System.out.println("Git testing");
         return ResponseEntity.ok(response);
     }
 }
