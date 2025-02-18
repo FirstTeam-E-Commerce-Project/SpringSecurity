@@ -46,7 +46,7 @@ public class ExampleController {
     @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/admin")
     public String adminEndpoint(){
-        return "Hello, Admin!";
+        return "Hello, Admin!......";
     }
 
 
